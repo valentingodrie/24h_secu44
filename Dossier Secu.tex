@@ -12,16 +12,17 @@
 \usepackage{pdfpages}
 \usepackage{sectsty} 
 \allsectionsfont{\normalfont\scshape}
-\usepackage{array}
+\usepackage{array, booktabs}
 \usepackage{supertabular}
+\usepackage{multirow}
 \usepackage{hyperref}
 \hypersetup{colorlinks=false,linktoc=all}
 \usepackage{fancyhdr} 
 \usepackage{eurosym}
 \pagestyle{fancy} 
 \fancyhead{} 
-\fancyfoot[L]{24 heures de l'INSA - Dossier sécurité - 44\up{ème} édition} 
-\fancyfoot[C]{}
+\fancyfoot[L]{\small{24 heures de l'INSA - 2018}} 
+\fancyfoot[C]{\small\hyperref[table_matiere]{Raccourci vers la table des matières}}
 \fancyfoot[R]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -175,7 +176,7 @@ Responsable STAFF Sécurité, Jean-Christophe Bel : \textbf{06 98 16 40 50}\\
 \end{supertabular}
 
 \tableofcontents
-
+\label{table_matiere}
 \newpage
 \section{Préambule}
 
@@ -227,6 +228,44 @@ Le festival des 24 heures de l’INSA est organisé par une association loi 1901
 
 \newpage
 
+\section{Résumé des modifications et nouveautés de l'édition 2018}
+
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\setlength{\extrarowheight}{.75ex}
+\begin{tabular}{|m{.15\textwidth}|m{.16\textwidth}|m{.47\textwidth}|m{.08\textwidth}|m{.04\textwidth}|} \toprule
+\cellcolor[gray]{0.9} \centering\textbf{Chapitre concerné} & \cellcolor[gray]{0.9} \centering\textbf{Sous-partie} & \cellcolor[gray]{0.9} \centering\textbf{Modifications} & \cellcolor[gray]{0.9} \centering\textbf{Section}& \cellcolor[gray]{0.9} \textbf{Page}\\ \midrule
+ & Calcul de l'effectif & Inchangé, la superficie de la zone est de 10 300 m\up{2}, soit 30 900 personnes. & \ref{calcul_de_leffectif}&\pageref{calcul_de_leffectif}\\
+\cmidrule{2-5}
+\vspace{1.5cm}
+Sécurité incendie & Plan de l'ERP & La zone de toilettes située à proximité de la Scène Root's (au nord du bâtiment Piscine) a été supprimée, toutes les toilettes ont été regroupées en une seule zone au sud. 
+
+Le chantier qui se situait à l'est du bâtiment Jacquard sera terminé avant la manifestation, mais le barriérage reprendra exactement le même tracé, afin de ne pas modifier la taille de la zone.& \ref{refPlanERP}&\pageref{refPlanERP}\\
+\cmidrule{2-5}
+& Dispositions spécifiques à l'espace Scène Root's & La structure recouvrant la scène a été modifiée. Une installation décorative surplombant le public a été rajoutée. Son exploitation en journée commence une heure plus tôt, à 13h.& \ref{Scene_roots}&\pageref{Scene_roots}\\
+\cmidrule{2-5}
+& Infrastructures scéniques & Nous changeons de prestataire et donc d'infrastructure scénique. La résistance au vent de la Grande Scène est accrue. & \ref{Grande_scene}&\pageref{Grande_scene}\\
+\midrule
+\vspace{1.5cm}
+Sûreté et Risques & Emplacement du PCS et du PCO & Nous avons mutualisé les emplacements du PCS et du PCO pour simplifier nos procédures d'armement de ce dernier. Afin d'avoir suffisamment d'espace pour tout le matériel nécessaire, nous utiliserons dorénavant une salle au 2\up{ème} étage de la Bibliothèque Marie Curie. & \ref{coordination_effectifs}
+
+\ref{refProcedurePMA}&\pageref{coordination_effectifs}
+
+\pageref{refProcedurePMA}\\
+\cmidrule{2-5}
+ & Dispositif anti-bélier & Création d'un deuxième périmètre de bloquage de circulation autour de la zone de plus forte affluence (la zone des entrées). & \ref{perimetre}&\pageref{perimetre}\\
+\midrule
+Plan Vigipirate & Nouvelles directives & Prise en compte des nouvelles directives parues depuis l'édition 2017. & \ref{refVigipirate}&\pageref{refVigipirate}\\
+\midrule
+Courses et Animations & Nouvelle animation à sensation forte & Une tyrolienne de 8 mètres de haut et 40 mètres de long sera proposée au public. & \ref{tyrolienne}&\pageref{tyrolienne}\\
+\midrule
+Accessibilité & Cabinet d'aisance & L'emplacement du cabinet d'aisance pour les PMR à été modifié. & \ref{toilette_PMR}&\pageref{toilette_PMR}\\
+\bottomrule
+
+\end{tabular}
+
+\newpage
+
 %------------------------------------------------------------------------------------------------------
 %SECURITE INCENDIE
 %------------------------------------------------------------------------------------------------------
@@ -250,7 +289,7 @@ Le festival des 24 heures de l’INSA est organisé par une association loi 1901
 	\captionof{figure}{Plan de la zone ERP et des alentours}
 	\vspace{5mm}
 	\includegraphics[angle=90,scale=0.7]{Exports/Plan_24h_44eme-Plan_ERP}
-	\captionof{figure}{\label{refPlanERP}Plan de l'ERP édition 2017}
+	\captionof{figure}{\label{refPlanERP}Plan de l'ERP édition 2018}
 \end{center}
 
 \section{Vue aérienne de la zone}
@@ -260,20 +299,64 @@ Le festival des 24 heures de l’INSA est organisé par une association loi 1901
 	\captionof{figure}{Vue aérienne de la zone}
 \end{center}
 \newpage
-\section{Photos de la zone}
+\section{Photos de la zone (janvier 2017)}
 \subsection{Zone nue}
 \begin{center}
 	\includegraphics[angle=90,width=.8\textwidth,keepaspectratio]{Exports/Plan_24h_44eme-Photos_Zone}
 	\captionof{figure}{Disposition des prises de vues de la zone nue}
 \end{center}
+\newpage
 
 \begin{center}
-	\includegraphics[angle=90,width=.7\textwidth,keepaspectratio, page = 1]{Annexes/Exports/Photos_zone}
-	\includegraphics[angle=90,width=.7\textwidth,keepaspectratio, page = 2]{Annexes/Exports/Photos_zone}
-	\includegraphics[angle=90,width=.7\textwidth,keepaspectratio, page = 3]{Annexes/Exports/Photos_zone}
-	\includegraphics[angle=90,width=.7\textwidth,keepaspectratio, page = 4]{Annexes/Exports/Photos_zone}
-	\includegraphics[angle=90,width=.7\textwidth,keepaspectratio, page = 5]{Annexes/Exports/Photos_zone}
+\begin{tabular}{ll}
+\includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_1} & \includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_2} \\
+\textbf{Photo 1 :} Bâtiment Coulomb longeant la zone ERP & \textbf{Photo 2 :} Pelouse recevant l'ERP
+\vspace{0.2 cm}\\
+\includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_3} & \includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_4} \\
+\textbf{Photo 3:}Bâtiment Jacquard longeant la zone ERP & \textbf{Photo 4 :} Voie pompier Coulomb
+\vspace{0.2 cm}\\
+\includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_5} & \includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_6} \\
+\textbf{Photo 5 :} Pelouse recevant la zone ERP & \textbf{Photo 6 :} Pelouse recevant la zone ERP\\
+\end{tabular}
 \end{center}
+
+\newpage
+
+\begin{center}
+\begin{tabular}{ll}
+\includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_7} & \includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_8} \\
+\textbf{Photo 7 :} Rue des Sports & \textbf{Photo 8 :} Rue des Sports - Sud
+\vspace{0.2 cm}\\
+\includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_9} & \includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_10} \\
+\textbf{Photo 9 :} Zone des caisses & \textbf{Photo 10 :} Zone des entrées
+\vspace{0.2 cm}\\
+\includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_11} & \includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_12} \\
+\textbf{Photo 11 :} Rue des Sports - Sud & \textbf{Photo 12 :} Espace Restauration\\
+\end{tabular}
+\end{center}
+
+\newpage
+
+\begin{center}
+\begin{tabular}{ll}
+\includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_13} & \includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_14} \\
+\textbf{Photo 13 :} Rue des Sports devant le Gymnase C & \textbf{Photo 14 :} Rond-point au nord de la zone
+\vspace{0.2 cm}\\
+\includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_15} & \includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_16} \\
+\textbf{Photo 15 :} Pelouse recevant la zone ERP & \textbf{Photo 16 :} Pelouse recevant la zone ERP
+\vspace{0.2 cm}\\
+\includegraphics[width=.45\textwidth]{Annexes/Exports/Photo_17} &  \\
+\textbf{Photo 17 :} Espace accueillant la scène Root's&\\
+\end{tabular}
+\end{center}
+
+%\begin{center}
+%	\includegraphics[angle=90,width=.7\textwidth,keepaspectratio, page = 1]{Annexes/Exports/Photos_zone}
+%	\includegraphics[angle=90,width=.7\textwidth,keepaspectratio, page = 2]{Annexes/Exports/Photos_zone}
+%	\includegraphics[angle=90,width=.7\textwidth,keepaspectratio, page = 3]{Annexes/Exports/Photos_zone}
+%	\includegraphics[angle=90,width=.7\textwidth,keepaspectratio, page = 4]{Annexes/Exports/Photos_zone}
+%	\includegraphics[angle=90,width=.7\textwidth,keepaspectratio, page = 5]{Annexes/Exports/Photos_zone}
+%\end{center}
 \subsection{Zone en configuration concerts}
 
 \begin{center}
@@ -299,7 +382,8 @@ Ces zones ne sont pas des ERP indépendants, mais des zones incluses dans l’ER
 Étant donné que nous recevons un public dont l’effectif est supérieur à 1500 personnes, nous correspondons à un établissement ERP de \textbf{1ère catégorie.} \\
 De plus, il s’agit d’une zone de concerts temporaire extérieure sur un site naturel existant (le campus «Lyon Tech - La Doua»). La zone de concerts est donc un \textbf{ERP de type Plein Air.}
 
-\subsubsection{Calcul de l’effectif (P.A.2)} 
+\subsubsection{Calcul de l’effectif (P.A.2)}
+\label{calcul_de_leffectif} 
 
 Étant donné que nous n’utilisons ni gradin ni tribune, nous pouvons accueillir sur les zones réservées aux spectateurs (à l’exclusion des dégagements) trois personnes stationnant debout par mètre carré ou cinq personnes par mètre linéaire. \\
 D’après la superficie de la zone considérée (10 300 m²), nous pouvons accueillir \textbf{au maximum 30 900  personnes} à raison de 3 personnes par mètre carré.
@@ -314,8 +398,7 @@ Cependant la zone sera exploitée à hauteur de 10 000 personnes maximum comme l
 
 \subsubsection{Construction (P.A.3)} 
 \label{refArticleERPContruction}
-% A_VERIF
-D’après l’implantation de la zone concerts définie sur les plans, nous n’avons aucune installation dangereuse à moins de 10 mètres de la zone concernée. \\
+D’après l’implantation de la Zone de Concerts définie sur les plans, nous n’avons aucune installation dangereuse à moins de 10 mètres de la zone concernée. \\
 De plus l’accès au périmètre de l’ERP peut se faire par 2 voies d’accès d’au moins 12 mètres de large : 
 \begin{list}{•}{}
 	\item Avenue des Arts ;
@@ -342,11 +425,11 @@ Si les accès pompiers précédemment mentionnés sont entravés par des barriè
 \textbf{Remarques (CO4): }\\
 Cette zone ERP est desservie sur au moins la moitié de son périmètre par les voies d’accès des services de secours. 
 
-La façade Nord est accessible par l’avenue des Arts et la rue des Sports – Nord. 
+La façade nord est accessible par l’avenue des Arts et la rue des Sports – Nord. 
 
-La façade Sud est accessible par la rue des Sports – Sud, la rue des Sciences ainsi que par la voie du capitaine Pons. 
+La façade sud est accessible par la rue des Sports – Sud, la rue des Sciences ainsi que par la voie du capitaine Pons. 
 
-La façade Ouest est quant à elle accessible par la voie pompier Coulomb.\\
+La façade ouest est quant à elle accessible par la voie pompier Coulomb.\\
 
 
 \textbf{Remarques (CO8): }\\
@@ -354,7 +437,7 @@ Cinq bâtiments tiers sont situés en contact de la zone. Les bâtiments Freyssi
 
 Les fiches ERP de ces bâtiments sont disponibles en Annexe du présent dossier. 
 
-Lors de la manifestation des 18, 19 et 20 mai 2018, ces bâtiments seront vides d’effectif public, seuls le PC sécurité, le poste de secours ainsi que les loges des artistes seront dans ces locaux. 
+Lors de la manifestation des 18, 19 et 20 mai 2018, ces bâtiments seront vides d’effectif public, seuls le PC sécurité, le poste de secours, l'espace VIP ainsi que les loges des artistes seront dans ces locaux. 
 
 
 \subsubsection{Règles parasismiques (P.A.4)} 
@@ -390,7 +473,7 @@ Les sorties sont réparties équitablement autour de l’ERP :
 	\item1 sortie de 7m (11UP) au sud du terrain stabilisé (\textbf{E})
 	\item1 sortie de 3,5m (5UP) à proximité du poste de secours (\textbf{F})
 	\item2 sorties de 7m (22UP) sur la rue des Sciences (\textbf{G} et \textbf{H})
-	\item1 sortie de 7m (11UP) sur la rue des Sports au Sud (\textbf{I})
+	\item1 sortie de 7m (11UP) sur la rue des Sports - Sud (\textbf{I})
 	\item1 sortie de 3,5m (5 UP) et 1 sortie de 7m (11UP) à proximité du bâtiment Jacquard (\textbf{J} et \textbf{K})
 	\item1 sortie de 3,5m (5UP) au nord de la Grande Scène (\textbf{L})
 	\item1 sortie de 7m (11UP) à proximité du bâtiment Coulomb (\textbf{M})
@@ -482,19 +565,19 @@ Les pompiers, ainsi que le service Sécurité Civile de la Ville de Villeurbanne
 
 De plus, un message sonore pré-enregistré est diffusable sur le système de sonorisation de chacune des scènes.
 
-\subsection{Dispositions spécifiques}
-\subsubsection{Dispositions spécifiques à la zone des caisses}
+\section{Dispositions spécifiques}
+\subsection{Dispositions spécifiques à la zone des caisses}
 L’accès aux soirées de concerts des 24 heures de l’INSA est payant. Un espace dédié à la vente de billets est situé à l’entrée de la zone. \\
-La zone des caisses est une zone dédiée uniquement à la vente de billets pour accéder à la zone principale. Elle est composée d'une file d’attente matérialisée à l’aide de barrières de police de type Vauban qui débouche sur un préfabriqué de caisse. A la suite de l'achat du billet, le festivalier accède aux files d'attente pour entrer dans la zone concerts. Les festivaliers seront invités à acheter leurs billets en amont de la manifestation, et s'ils les achètent sur place à effectuer cet achat sur leur téléphone pour réduire l'affluence des caisses.
+La zone des caisses est une zone dédiée uniquement à la vente de billets pour accéder à la zone principale. Elle est composée d'une file d’attente matérialisée à l’aide de barrières de police de type Vauban qui débouche sur un préfabriqué de caisse. A la suite de l'achat du billet, le festivalier accède aux files d'attente pour entrer dans la Zone de Concerts. Les festivaliers seront invités à acheter leurs billets en amont de la manifestation, et s'ils les achètent sur place à effectuer cet achat sur leur téléphone pour réduire l'affluence aux caisses.
 \begin{center}
 	\includegraphics[width=.8\textwidth,keepaspectratio]{Exports/Plan_24h_44eme-Entree}
 	\captionof{figure}{Plan de la zone des caisses}
 	\includegraphics[width=.8\textwidth,keepaspectratio]{Exports/Plan_24h_44eme-Entree_zoom}
 	\captionof{figure}{Plan de la zone des caisses - détail}
 \end{center}
-\paragraph{Calcul de l’effectif :}
+\subsubsection{Calcul de l’effectif :}
 Nous nous basons pour le calcul sur l’article PA 2. La superficie de la zone est de \textbf{496m²}. Elle peut donc accueillir \textbf{1488 personnes}. Les dispositions prises pour cette zone se basent donc sur la réglementation ERP plein air de \textbf{2e catégorie}. \\
-\paragraph{Calcul des dégagements:}
+\subsubsection{Calcul des dégagements:}
 Cette zone a une capacité comprise entre 501 et 3000 personnes, nous devons donc prévoir \textbf{3 sorties} au minimum en accord avec l’article PA 7. De plus il faut prévoir une unité de passage par tranche de 300 personnes, soit ici \textbf{5 UP}. 
 \begin{center}
 	Le dispositif propose :        \textbf{11 sorties – 27 UP}
@@ -525,9 +608,9 @@ De plus, l’article \textbf{M 9 §4 }du 2 février 1993 prévoit que les groupe
 Une équipe d’agents de sûreté composée d’un SSIAP 1 sera chargée de prendre en charge les Personnes à Mobilité Réduite souhaitant utiliser les caisses en les guidant sur le parcours défini ci-dessus. 
 \newpage
 
-\subsubsection{Dispositions spécifiques à l’espace restauration}
+\subsection{Dispositions spécifiques à l’espace restauration}
 
-\paragraph{Plan de situation:}
+\subsubsection{Plan de situation:}
 L’espace restauration est situé à l'est du bâtiment Freyssinet. Il est composé de divers stands de restauration, ainsi que de "mange-debout", de tables et de bancs en plastique dans un espace délimité par des barrières  de police de type Vauban et des barrières de clôture de type Héras.
 
 \begin{center}
@@ -537,7 +620,7 @@ L’espace restauration est situé à l'est du bâtiment Freyssinet. Il est comp
 	\captionof{figure}{Plan de situation de l'espace restauration - détail}
 \end{center}
 
-\paragraph{Calcul de l'effectif (Article N 2):}
+\subsubsection{Calcul de l'effectif (Article N 2):}
 La superficie totale de la zone de restauration est de \textbf{604 m\up{2}}. On peut, par analogie, se référer à la réglementation \textbf{ERP de type N} (Restaurants ou débits de boissons) pour évaluer l’effectif de la zone. \\
 
 La réglementation de type N indique une densité de \textbf{1 personne/m\up{2}} en cas de restauration assise, \textbf{2 personnes/m\up{2}} en cas de restauration debout, et \textbf{3 personnes/m\up{2}} en file d'attente. Ici nous avons ces trois zones, répartie de la façon suivante :
@@ -555,20 +638,20 @@ L'effectif total admissible dans cette zone est donc de \textbf{1490 personnes}.
 	\captionof{figure}{Métré et dégagements de l'espace restauration}
 \end{center}
 
-\paragraph{Dégagements et évacuation:}
+\subsubsection{Dégagements et évacuation:}
 Par analogie avec la réglementation de type N, l’article \textbf{CO 38 §1} indique que pour les établissements recevant plus de 100 personnes, \textbf{deux dégagements jusqu’à 500 personnes doivent être prévus, auxquels vient s'ajouter un dégagement par tranche de 500 personnes supplémentaires}. De plus, il est indiqué que \textbf{la largeur des dégagements doit être calculée à raison d'une unité de passage pour 100 personnes ou fraction de 100 personnes}, ce qui donne 15 unités de passage dans notre cas. \\
 
 Etant donné la configuration de notre zone, nous ne pourrons mettre en place qu'un maximum de trois sorties, réparties sur toute la façade est de l'espace de restauration. En revanche, nous avons un total de \textbf{22 UP}, pour un minimum de 15 UP, soit un \textbf{différentiel positif de 7 UP}. 
 
-\paragraph{Eclairage:}
+\subsubsection{Eclairage:}
 
 Conformément aux \textbf{articles EC 7 à 15}, un éclairage de sécurité sera mis en place, tel qu'on peut le voir sur la figure précédente.
 
-\paragraph{Moyens de secours contre l'incendie:}
+\subsubsection{Moyens de secours contre l'incendie:}
 
 Les moyens secours contre l'incendie mis en oeuvre sont tels que décrit au paragraphe \ref{moyensSecoursIncendie}.
 
-\paragraph{Mobilier:}
+\subsubsection{Mobilier:}
 Le mobilier utilisé sera fourni par la mairie de Villeurbanne. Il sera composé de tables et de bancs en plastique. 
 \begin{center}
 	\includegraphics[scale=1]{Annexes/Images/tables}
@@ -576,12 +659,12 @@ Le mobilier utilisé sera fourni par la mairie de Villeurbanne. Il sera composé
 \end{center}
 La réglementation de type N n’impose pas de résistance au feu pour le mobilier dit “courant” dont font partie les tables et les bancs. \\
 
-\paragraph{Sûreté:}
+\subsubsection{Sûreté:}
 
 La zone de restauration sera placée sous le contrôle de \textbf{2 agents de sûreté}, placés au niveau des accès à la zone, ainsi que d'un agent supplémentaire au niveau du bar PMR. Ils auront pour mission de s'assurer du maintien de l'ordre dans cette zone.
 
-\subsubsection{Dispositions spécifiques à l'espace Scène Root's}
-
+\subsection{Dispositions spécifiques à l'espace Scène Root's}
+\label{Scene_roots}
 \textbf{Présentation du principe:}\\
 
 La Scène Root's est une petite scène, sur laquelle sera diffusée de la musique d'un genre alternatif aux deux autres scènes. Elle sera constituée d'un podium formé par des praticables de la mairie de Villeurbanne, et recouverte par une bache tendue par deux arches, tel que vous pouvez le voir sur l'image suivante :
@@ -605,23 +688,23 @@ La résistance au vent et les charges maximales feront l'objet d'une note de cal
 Cette animation aura lieu :
 \begin{list}{•}{}
 	\item le vendredi \textbf{18} mai de \textbf{20h à 3h20}
-	\item le samedi \textbf{19} mai de \textbf{14h à 17h} et de \textbf{20h à 3h20}
+	\item le samedi \textbf{19} mai de \textbf{13h à 17h} et de \textbf{20h à 3h20}
 	\item le dimanche \textbf{20} mai de \textbf{13h à 17h}
 \end{list}
 
-\paragraph{Implantation:}
+\subsubsection{Implantation:}
 Cette animation sera placée sur le parking au nord de la piscine.
 \begin{center}
 	\includegraphics[width=.8\textwidth,keepaspectratio]{Exports/Plan_24h_44eme-3e_Scene}
 	\captionof{figure}{Implantation de l'animation "Scène Root's"}
 \end{center}
 
-\paragraph{Réglementation:}
+\subsubsection{Réglementation:}
 La zone de cette animation n'a pas de démarquation physique avec le reste de la zone ERP. Cependant, afin d’anticiper au mieux les risques liés à cette animation, nous reprenons ci-après, et \textbf{par analogie}, les différents articles de la réglementation PA sur lesquels nous nous sommes basés pour dimensionner le dispositif de sécurité. 
 
 \newpage
 
-\subparagraph{Généralité}
+\paragraph{Généralité}
 \subparagraph*{Calcul de l'effectif (Article P.A.2):}\mbox{}\\
 L’effectif maximal est dépendant du type d’activité qui y est pratiqué. Dans notre cas, la zone sera utilisée pour une animation musicale avec des spectateurs en plein air, ce qui rentre dans la catégorie PA. \\
 
@@ -636,12 +719,12 @@ La surface accessible au public étant de \textbf{206 m\up{2}}, la capacité max
 	\captionof{figure}{Circulations autour de la zone de l'animation}
 \end{center}
 
-\subparagraph{Construction}
+\paragraph{Construction}
 
 \subparagraph*{Implantation (Article P.A.3):}\mbox{}\\
 La zone d’implantation ne présente pas de risque d’inflammation rapide (asphalte) et aucune installation dangereuse ne se trouve à moins de 20 mètres.
 
-Deux voies de 8m de large (la rue des Sports nord et sud) desservent la facade ouest de la zone, conformément à l'article CO 4 cité dans l'article P.A.3.
+Deux voies de 8m de large (la rue des Sports Nord et Sud) desservent la facade ouest de la zone, conformément à l'article CO 4 cité dans l'article P.A.3.
 
 \subparagraph*{Règles parasismiques (Article P.A.4) :}\mbox{}\\
 Abrogé par arrêté du 10 novembre 1994.
@@ -652,7 +735,7 @@ Aucun gradin ni tribune ne sera installé dans cette zone.
 \subparagraph*{Locaux à risques particuliers (Article P.A.6):}\mbox{}\\
 Aucun local à risque particulier ne sera installé dans cette zone.
 
-\subparagraph{Dégagements}
+\paragraph{Dégagements}
 
 \subparagraph*{Escaliers, vomitoires, sorties des tribunes et gradins non démontables (Article P.A.7):}\mbox{}\\
 D’après la réglementation de l’article P.A.7, l’établissement ayant un effectif total admissible compris entre 501 et 3000 personnes, trois sorties doivent être prévues. De plus, le nombre d'unités de passage nécessaire pour accueillir 618 personnes s'élève à trois.
@@ -665,21 +748,21 @@ La configuration de cette zone nous permet de mettre en place un maximum de deux
 \subparagraph*{Ouverture des accès (Article P.A.8):}\mbox{}\\
 La sortie à l'ouest de la zone sera ouverte en permanence. Celle située à l'est sera gardée par un agent de sûreté de la société STAFF pendant toute la durée de l'exploitation.
 
-\subparagraph{Aménagements}
+\paragraph{Aménagements}
 
 \subparagraph*{Rangées de sièges ou de bancs (Article P.A.9):}\mbox{}\\
 
 Aucun mobilier, table, chaise, banc ne sera installé dans la zone accessible au public.
 
-\subparagraph{Electricité}
+\paragraph{Electricité}
 
 \subparagraph*{Installations électriques (Article P.A.10) :}\mbox{}\\
 
-Voir paragraphe \ref{InstallationsElectriques}.
+Identique aux dispositions décrites au paragraphe \ref{InstallationsElectriques}.
 
 \subparagraph*{Éclairage (Article P.A.11):}\mbox{}\\
 
-Voir paragraphe \ref{Eclairage}.
+Identique aux dispositions décrites au paragraphe \ref{Eclairage}.
 
 \subparagraph*{Moyens d'extinction (Article P.A.12):}\mbox{}\\
 
@@ -691,7 +774,7 @@ Comme spécifié au paragraphe \ref{SecuIncendie}, un agent certifié SSIAP 1 se
 
 \subparagraph*{Système d'alerte (Article P.A.14):}\mbox{}\\
 
-Voir paragraphe \ref{systemeAlerteIncendie}.
+Identique aux dispositions décrites au paragraphe \ref{systemeAlerteIncendie}.
 
 \begin{center}
 	\includegraphics[width=.8\textwidth,keepaspectratio]{Exports/Plan_24h_44eme-3e_Scene_Secu_Incendie}
@@ -700,14 +783,14 @@ Voir paragraphe \ref{systemeAlerteIncendie}.
 
 \newpage 
 
-\subsubsection{Dispositions spécifiques à la zone ERP réduite le dimanche soir}
+\subsection{Dispositions spécifiques à la zone ERP réduite le dimanche soir}
 
 \textbf{Présentation du principe:}\\
 Des concerts de jazz auront lieu sur la grande scène en clôture du festival le dimanche soir. Les deux concerts seront encadrés par les mêmes techniciens professionnels que pour les soirées du vendredi et du samedi.\\
 
 La soirée du dimanche est destinée aux étudiants du campus, et la communication sera limitée en dehors des étudiants concernant cette soirée. Nous fixons donc une jauge maximale à \textbf{2 000 personnes}. Le nombre d'entrées sera compté par un bénévole à l'aide d'un compteur manuel. Passé ce seuil, l'accès à la zone ne sera plus autorisé.\\
 
-Une zone ERP réduite sera mise en place à partir de 20h00 dans la partie sud de la zone concerts.\\
+Une zone ERP réduite sera mise en place à partir de 20h00 dans la partie sud de la Zone de Concerts.\\
 
 Cette zone a une \textbf{capacité} comprise entre \textbf{501 et 3000 personnes}, nous devons donc \textbf{prévoir 3 sorties au minimum} en accord avec l’article P.A. 7. De plus il faut prévoir une unité de passage par tranche de 300 personnes, \textbf{soit ici 6 UP.}\\
 
@@ -729,16 +812,17 @@ En revanche, la disposition des extincteurs, éclairages de secours et installat
 Note : la scène de l’édition 2018 ne sera plus identique aux éditions précédentes. Afin d'agrandir la surface utile ainsi que la résistance au vent, nous ferons appel à un prestataire différent. La structure utilisée permettra ainsi une résistance aux vents jusqu'à \textbf{110 km/h}.
 \begin{center}
 	\includegraphics[scale=0.40, angle=90]{Annexes/Images/GrandeScene}
-	\captionof{figure}{Grande scène perspective 3D}
+	\captionof{figure}{\label{Grande_scene}Grande scène perspective 3D}
 \end{center}
 
 \subsection{Plan d’installation de l'arche d’entrée}
-
+Ceci est l'arche qui surplombe les files des entrées. Elle permet l'accrochage de signalétique et de spots lumineux.
 \begin{center}
 	\includegraphics[scale=0.6, angle=90]{Annexes/Images/ArcheEntrees}
 	\captionof{figure}{Arche vue perspective 3D}
 \end{center}
 
+\newpage
 
 \subsection{Avis favorable du bureau de contrôle SOCOTEC}
 L'établissement ERP tel que décrit jusqu'à présent a fait l'objet en 2017 d'un examen par le bureau de contrôle SOCOTEC et y a reçu un avis favorable.
@@ -747,6 +831,8 @@ L'établissement ERP tel que décrit jusqu'à présent a fait l'objet en 2017 d'
 	\includegraphics[width=.75\textwidth,keepaspectratio]{Annexes/Documents/ERP2017AvisSOCOTEC}
 	\captionof{figure}{Avis favorable du bureau de contrôle SOCOTEC}
 \end{center}
+
+\newpage
 
 \subsection{Arrêté municipal autorisant le déroulement des concerts}
 
@@ -791,7 +877,7 @@ En semaine comme le week-end, les bâtiments de l’INSA sont sous la surveillan
 En ce qui concerne l’Université Claude Bernard et l’IUT Lyon 1, des services similaires existent, ceux-ci ayant pour mission de surveiller les bâtiments et notamment les laboratoires. Chacun de ces services a une bonne connaissance du terrain surveillé, liée à l’expérience qu’ils en ont respectivement.
 
 \begin{center}
-	\includegraphics[scale=0.85]{Annexes/Plans/planDeSituation}
+	\includegraphics[width=.8\textwidth]{Annexes/Plans/planDeSituation}
 	\captionof{figure}{Plan de situation des bâtiments présents sur le campus LyonTech/La Doua}
 \end{center}
 
@@ -821,12 +907,13 @@ La répartition hiérarchique des effectifs est la suivante :
 	\item 1 Régisseur général et 6 techniciens s’occupant des scènes *
 	\item 2 Electriciens *
 	\item 7 Chefs d’équipe dirigeant les buvettes et divers stands *
-	\item 300 Bénévoles répartis sur l’ensemble de la zone concerts ayant pour missions principales les ventes, la prévention et le ramassage des déchets
+	\item 300 Bénévoles répartis sur l’ensemble de la Zone de Concerts ayant pour missions principales les ventes, la prévention et le ramassage des déchets
 \end{list}
 
-\textit{* ces organisateurs ont reçu une formation à l'utilisation des extincteurs}
+\textit{* ces organisateurs ont été sensibilisé à l'utilisation des extincteurs}
 
 \subsubsection{Coordination des effectifs}
+\label{coordination_effectifs}
 
 Les organisateurs sont conscients de l’enjeu de sécurité et de sûreté que représentent les 24 heures sur le campus. Ainsi le projet repose sur une organisation humaine cohérente qui facilite la sécurité. Les missions de chaque intervenant sont clairement définies en amont de la manifestation.
 
@@ -867,7 +954,7 @@ Les responsables de la Croix Rouge possèdent également un talkie-walkie sur la
 
 Les numéros des responsables sécurité, ainsi que celui du président, se trouvant au début du présent dossier, sont communiqués à tous les intervenants le jour de la réunion de sécurité. Ils sont également communiqués à tous les organisateurs et bénévoles par voie écrite et orale lors du «briefing bénévoles», qui a lieu lors de la semaine précédant la manifestation. Pendant ce briefing sont également précisés les procédures et les points de vigilance importants pour la sécurité.\\
 
-\subsection{Emplacement du PCO et du PMA}
+\subsection{Emplacement du PCO et des PMA}
 \label{refProcedurePMA}
 
 En cas d’activation du Plan NOVI (Nombreuses Victimes) par la préfecture, des emplacements sont disponibles pour la mise en place d'un PCO et de PMA nécessaires au bon fonctionnement des opérations de secours. 
@@ -899,7 +986,7 @@ Plusieurs emplacements, desservis par des voies pompiers, sont disponibles pour 
 
 
 \subsection{Gestion des accès}
-\subsubsection{Accès au campus de la Doua}
+\subsubsection{Circulation sur le campus de la Doua}
 \label{refAccesCampus}
 
 Le \textbf{campus} de Lyon Tech - La Doua est \textbf{entièrement fermé} à tous véhicules par un \textbf{barriérage} ou la \textbf{pose de blocs béton} sur les voies de circulation. Durant l'événement, seuls quatre points d'accès permettent aux véhicules autorisés d'entrer sur le campus.
@@ -910,14 +997,14 @@ Seuls les \textbf{secours} et les véhicules munis d’un \textbf{laissez-passer
 L’accès au campus est contrôlé par des bénévoles formés pour cette tâche. Chaque point de sécurité est gardé par \textbf{deux personnes} munies d’un \textbf{talkie-walkie, sur la fréquence des responsables sécurité}. Ces personnes sont relayées toutes les deux heures. \\
 De plus, \textbf{entre 20h et 05h} les vendredi et samedi soirs, le dispositif est complété par des \textbf{véhicules banalisés} (de type Kangoo) placés en travers des voies d'accès (empêchant tout véhicule de forcer l'accès) et gardés constamment par un agent de sûreté préposé à la manoeuvre de ces véhicules pour libérer l'accès en cas de besoin.\\
 
-Du vendredi 18 mai à 18h au dimanche 20 mai à 23h59, la \textbf{procédure d’accès} au campus est la suivante (vous trouverez ci-après le plan des points de sécurité du campus) :
+Du vendredi 18 mai à 18h au dimanche 20 mai à 23h59, la \textbf{conditions d’accès} au campus est la suivante (vous trouverez ci-après le plan des points de sécurité du campus) :
 \begin{list}{•}{}
 	\item Les points d'accès 3 et 6 sont condamnés par la pose de blocs béton sur les voies, empêchant l'accès de tout véhicule (y compris les véhicules d'urgence).
-	\item Entre 20h et 05h les vendredi et samedi soirs, en raison de la forte affluence de festivaliers, l'accès au campus est restreinte aux véhicules de secours, aux conducteurs TCL, aux Personnes à Mobilité Réduite et à quelques véhicules organisateurs ou de manutention. Tout autre véhicule sera refusé aux points d'accès (y compris pour les détenteurs de laissez-passer).
-	\item En dehors des horaires de circulation restreinte précisés ci-dessus, l’entrée sur le campus se fait uniquement par les accès Sud : poste de gardiennage INSA (point d'accès 4) et Double Mixte (point d'accès 5), sur présentation d’un laissez-passer délivré par nos soins. 
-	\item Les coureurs des courses vélo et à pied peuvent accéder au campus le vendredi 18 mai entre 18h et 20h ainsi que le samedi 19 mai entre 5h et 10h, dans la mesure où leur nom figure sur les listes d’inscription. Ceux-ci ne peuvent rentrer que par le point d'accès Ouest sur le boulevard Laurent Bonnevay (point d'accès 1). Ils seront ensuite redirigés vers un parking dans l’enceinte des courses.
+	\item Entre 20h et 05h les vendredi et samedi soirs, en raison de la forte affluence de festivaliers, l'accès au campus est restreinte aux véhicules de secours, aux conducteurs TCL (qui passeront obligatoirement par le PS2), aux Personnes à Mobilité Réduite et à quelques véhicules organisateurs ou de manutention. Tout autre véhicule sera refusé aux points d'accès (y compris pour les détenteurs de laissez-passer).
+	\item En dehors des horaires de circulation restreinte précisés ci-dessus, l’entrée sur le campus se fait uniquement par les accès sud : poste de gardiennage INSA (point d'accès 4) et Double Mixte (point d'accès 5), sur présentation d’un laissez-passer délivré par nos soins. 
+	\item Les coureurs des courses vélo et à pied peuvent accéder au campus le vendredi 18 mai entre 18h et 20h ainsi que le samedi 19 mai entre 5h et 10h, dans la mesure où leur nom figure sur les listes d’inscription. Ceux-ci ne peuvent rentrer que par le point d'accès ouest sur le boulevard Laurent Bonnevay (point d'accès 1). Ils seront ensuite redirigés vers un parking dans l’enceinte des courses.
 	\item Le point d'accès 2 est réservé aux services de secours.
-	\item L’ensemble du barriérage est levé lundi 21 mai à 00h, après la fin du feu d’artifice. Les blocs béton obstruant les points d'accès 3 et 6 sont quant à eux retirés entre 00h et 01h le lundi 21 mai.
+	\item L’ensemble du barriérage est levé dimanche 20 mai à 23h59, après la fin du feu d’artifice. Les blocs béton obstruant les points d'accès 3 et 6 sont quant à eux retirés entre 00h et 01h le lundi 21 mai.
 	\item Durant toute la manifestation, des bénévoles munis de talkie-walkies se tiennent à proximité de l’ensemble des entrées.
 \end{list}
 
@@ -926,15 +1013,18 @@ Du vendredi 18 mai à 18h au dimanche 20 mai à 23h59, la \textbf{procédure d�
 	\captionof{figure}{Liste des points sécu du campus de la Doua}
 \end{center}
 
+\subsubsection{Dispositif complémentaire}
+\label{perimetre}
+
 Etant donné la taille du campus et le nombre de véhicules stationnés à l'intérieur de ce périmètre, un second périmètre de sécurité est instauré autour de la zone de plus forte affluence, au niveau des entrées :
 
 \begin{center}
 	\includegraphics[width=.8\textwidth,keepaspectratio]{Exports/Plan_24h_44eme-Vehicules_beliers}
-	\captionof{figure}{Second périmètre de sécurité}
+	\captionof{figure}{\label{second_perimetre}Second périmètre de sécurité}
 \end{center}
 
-Deux véhicules banalisés sont placés sur les deux voies d'accès à cette zone. Ces véhicules seront aussi gardés soit par un agent (pour le véhicule près du PS4), soit par un bénévole (pour l'autre véhicule). A l'intérieur de ce périmètre, il n'y aura aucun véhicule de stationné, et seul les services de secours et la police seront autorisés à rentrer.
-
+Deux véhicules banalisés sont placés sur les deux voies d'accès à cette zone. Ces véhicules seront aussi gardés en permanance soit par un agent (pour le véhicule près du PS4), soit par des bénévoles qui se relaient (pour l'autre véhicule). A l'intérieur de ce périmètre, il n'y aura aucun véhicule de stationné, et seul les services de secours et la police seront autorisés à rentrer.
+\\
 Durant toute la manifestation, soit du vendredi 18h au dimanche 23h59, les lecteurs des badges d’accès aux bâtiments de cours et laboratoires sont désactivés. De plus, dans toutes les résidences universitaires du campus de Lyon Tech - La Doua, les ascenseurs sont désactivés.\\
 
 
@@ -965,9 +1055,9 @@ Au deuxième étage de la bibliothèque Marie Curie se trouvent les trois PC (Re
 
 \subsubsection{Points de vigilance}
 
-Pour séparer le public de la scène des concerts, un dispositif de «crash barrières» est mis en place sur 18 mètres de large devant la grande scène, sur 7 mètres devant la scène Nord et sur 6m devant la scène Root's. \\
+Pour séparer le public de la scène des concerts, un dispositif de «crash barrières» est mis en place sur 18 mètres de large devant la Grande Scène, sur 7 mètres devant la Scène Nord et sur 9 mètres devant la Scène Root's. \\
 
-Deux agents de sûreté ainsi que \textbf{2 SSIAP} (1 niveau 1 et 1 niveau 2) sont positionnés devant la \textbf{grande scène} ; deux agents de sûreté SSIAP (1 niveau 1 et 1 niveau 2) sont positionnés devant la \textbf{scène Nord} ; un agent SSIAP 1 est positionné devant la scène Root's.\\
+Deux agents de sûreté ainsi que \textbf{2 SSIAP} (1 niveau 1 et 1 niveau 2) sont positionnés devant la \textbf{grande scène} ; deux agents de sûreté SSIAP (1 niveau 1 et 1 niveau 2) sont positionnés devant la \textbf{Scène Nord} ; un agent SSIAP 1 est positionné devant la scène Root's.\\
 
 Au total \textbf{13 agents de sûreté dont 1 SSIAP 1} sont présents sur la zone des \textbf{entrées} pour guider les visiteurs et assurer la tranquillité de la zone.\\
 
@@ -985,7 +1075,7 @@ Une Drop Zone sur un terrain de sport libre de toute activité sera prévue à c
 
 \paragraph{Du vendredi 18 mai au dimanche 20 mai à 8h00 :}
 
-La Drop Zone sera située sur le terrain stabilisé situé au Nord de la zone ERP matérialisé sur le plan qui suit :
+La Drop Zone sera située sur le terrain stabilisé situé au nord de la zone ERP matérialisé sur le plan qui suit :
 
 \begin{center}
 	\includegraphics[scale=0.4]{Annexes/Plans/dropZone}
@@ -1000,7 +1090,7 @@ Les bénévoles responsables de la surveillance des points d’entrées du campu
 \end{center}
 
 \paragraph{A partir du dimanche 20 à 8h00}
-A cause de la présence d’explosifs destinés au feu d’artifice le dimanche soir sur le terrain stabilisé (en jaune) la Drop Zone en cas de crise est déplacée vers les terrains du SIUAPS à l’Ouest du campus.
+A cause de la présence d’explosifs destinés au feu d’artifice le dimanche soir sur le terrain stabilisé (en jaune) la Drop Zone en cas de crise est déplacée vers les terrains du SIUAPS à l’ouest du campus.
 
 
 \begin{center}
@@ -1015,7 +1105,7 @@ A cause de la présence d’explosifs destinés au feu d’artifice le dimanche 
 \end{center}
 \newpage
 
-\subsection{Mesures de protection des abords de la zone concerts}
+\subsection{Mesures de protection des abords de la Zone de Concerts}
 \subsubsection{Protection des bâtiments} 
 Durant la manifestation, une protection spécifique est mise en place au niveau des bâtiments les plus exposés aux risques de dégradations. En particulier, la bibliothèque Marie Curie (BMC) et le bâtiment Direction de l'INSA Lyon sont sécurisés comme indiqué dans la figure suivante. Le barriérage sera effectué par le Club des 24 heures de l'INSA.
 
@@ -1063,7 +1153,7 @@ Procédure en cas d’alerte :
 \begin{enumerate}
 	\item PROSEGUR prévient le PC sécurité des 24 heures de l’INSA
 	\item Le PC sécurité demande au patrouilleur de vérifier visuellement s’il constate un sinistre. En même temps, les équipes de PROSEGUR se rendent sur place. Ils disposent de PASS pour entrer sur le campus en voiture.
-	\item Si un incendie ou une fuite de gaz est avéré, la procédure d’évacuation de la zone concerts est immédiatement déclenchée.
+	\item Si un incendie ou une fuite de gaz est avéré, la procédure d’évacuation de la Zone de Concerts est immédiatement déclenchée.
 \end{enumerate}
 
 \subsection{Dispositions relatives aux vendeurs itinérants}
@@ -1129,12 +1219,12 @@ A suivre
 
 En raison de la forte affluence de visiteurs, et afin de se conformer à la règlementation ERP en vigueur, la sécurité est renforcée en soirée. Le dispositif mis en place est détaillé ci-après.
 
-\subsection{Accès à la zone concerts}
+\subsection{Accès à la Zone de Concerts}
 \label{sec:acces_zc_soiree}
 
-En \textbf{journée}, le barriérage de la zone concerts reste en place. Cependant, son accès est libre car des animations sont installées sur la zone. En revanche, les deux zones entourant les régies et les scènes sont interdites d’accès (mise en place de barrières de sécurité).\\
+En \textbf{journée}, le barriérage de la Zone de Concerts reste en place. Cependant, son accès est libre car des animations sont installées sur la zone. En revanche, les deux zones entourant les régies et les scènes sont interdites d’accès (mise en place de barrières de sécurité).\\
 
-En \textbf{soirée}, la zone concerts est soumise à la réglementation ERP, décrite dans la partie «Sécurité Incendie» du présent dossier. 
+En \textbf{soirée}, la Zone de Concerts est soumise à la réglementation ERP, décrite dans la partie «Sécurité Incendie» du présent dossier. 
 
 \subsubsection{Entrées et sorties de la zone ERP en soirée}
 
@@ -1148,27 +1238,27 @@ La \textbf{sortie} de la zone s’effectue par \textbf{un couloir} le long de la
 
 \begin{center}
 	\includegraphics[width=.8\textwidth,keepaspectratio]{Exports/Plan_24h_44eme-Entree_Etapes}
-	\captionof{figure}{\label{etapes_entrees}Entrée et sortie de la zone concerts}
+	\captionof{figure}{\label{etapes_entrees}Entrée et sortie de la Zone de Concerts}
 \end{center}
 
 Il est à noter que les agents de sûreté mobiles, les bénévoles munis de leur bracelet et les secouristes peuvent accéder à la zone depuis n’importe quel couloir, y compris la sortie, et autant de fois que nécessaire.\\
 
-En cas d’évacuation de la zone concerts, les sorties de secours propres à la zone des caisses  ainsi que les sorties de secours de la zone concerts sont ouvertes par des agents de sûreté et des organisateurs postés sur place. 
+En cas d’évacuation de la Zone de Concerts, les sorties de secours propres à la zone des caisses  ainsi que les sorties de secours de Zone de Concerts sont ouvertes par des agents de sûreté et des organisateurs postés sur place. 
 
 \subsubsection{Horaires d’ouverture}
 L'ouverture des portes s'effectue à 20h le vendredi et le samedi.\\
 
-En fin de soirée, nous procédons à une fermeture progressive des activités sur la zone concerts : 
+En fin de soirée, nous procédons à une fermeture progressive des activités sur la Zone de Concerts : 
 
 Le timing exact est le suivant, pour les vendredi et samedi soir :
 \begin{list}{•}{}
 	\item 2h00 : fermeture des caisses (fin des ventes et des palpations).
 	\item 2h15 : fermeture complète de la zone billetterie (fin des contrôles). 
-	\item 3h20 : fin des concerts sur la scène Root's (zone Nord).
-	\item 3h30 : fin des concerts sur la scène Nord (zone Nord).
-	\item 3h45 : fermeture des buvettes Nord, arrêt des concerts sur la Grande Scène (zone Sud).
-	\item 3h50 : fermeture de l'espace restauration et des premières buvettes de la zone Sud.
-	\item 4h : fermeture des dernières buvettes de la zone Sud.
+	\item 3h20 : fin des concerts sur la scène Root's (Zone Nord).
+	\item 3h30 : fin des concerts sur la scène Nord (Zone Nord).
+	\item 3h45 : fermeture des buvettes nord, arrêt des concerts sur la Grande Scène (Zone Sud).
+	\item 3h50 : fermeture de l'espace restauration et des premières buvettes de la Zone Sud.
+	\item 4h : fermeture des dernières buvettes de la Zone Sud.
 	\item Une courte attente pendant laquelle la majorité du public part naturellement, puis fermeture de la zone avec l’aide d’une patrouille mobile de 10 agents et de 2 maîtres-chiens (présents jusqu’à 4h30 du matin).
 \end{list}
 
@@ -1195,7 +1285,7 @@ Le cheminement du festivalier se fait comme expliqué ci-dessous.\\
 	\item Palpation corporelle (6 files)
 	\item Contrôle électronique des billets (6 files)
 	\item Remise des bracelets pour les files "pass 2 soirs" (4 files)
-	\item Accès à la zone concerts
+	\item Accès à la Zone de Concerts
 \end{list}
 
 \textbf{Le samedi :}
@@ -1205,7 +1295,7 @@ Le cheminement du festivalier se fait comme expliqué ci-dessous.\\
 	\item Files d’attente (6 files)
 	\item Palpation corporelle (6 files)
 	\item Contrôle des billets (3 files) ou contrôle des bracelets (3 files)
-	\item Accès à la zone concerts
+	\item Accès à la Zone de Concerts
 	
 \end{list}
 
@@ -1243,7 +1333,7 @@ Tout comme les caisses des bars, la caisse de la billetterie est relevée dès q
 
 \newpage 
 
-\subsection{Règlement intérieur de la zone concerts (version du 03/01/2017)}
+\subsection{Règlement intérieur de la Zone de Concerts (version du 03/01/2018)}
 
 
 \textbf{Article 1.}\hspace{3mm}La nature du projet\\
@@ -1251,7 +1341,7 @@ Le Club des 24 heures  de l’INSA, désigné par la suite «l’Organisation»,
 
 
 \textbf{Article 2.}\hspace{3mm}Définition\\
-On entend par «Festivalier» toute personne physique entrant sur la Zone Concerts du festival mise en place en soirée.\\
+On entend par «Festivalier» toute personne physique entrant sur la Zone de Concerts du festival mise en place en soirée.\\
 
 
 \textbf{Article 3.}\hspace{3mm}Généralités\\
@@ -1267,61 +1357,61 @@ Si pour des raisons de force majeure (raison météorologique ou risque d'attent
 
 
 \textbf{Article 6.}\hspace{3mm}Conditions d’accès\\
-\textbf{6.1}\hspace{3mm}L’accès à la Zone Concerts par les Festivaliers s’effectue entre 20h00 et 02h00 uniquement. En dehors de ces horaires, l’entrée est impossible. \\
-\textbf{6.2}\hspace{3mm}Toute personne souhaitant entrer dans la Zone Concerts devra présenter un titre d’accès valide acheté auprès des distributeurs agréés par l’Organisation.\\
+\textbf{6.1}\hspace{3mm}L’accès à la Zone de Concerts par les Festivaliers s’effectue entre 20h00 et 02h00 uniquement. En dehors de ces horaires, l’entrée est impossible. \\
+\textbf{6.2}\hspace{3mm}Toute personne souhaitant entrer dans la Zone de Concerts devra présenter un titre d’accès valide acheté auprès des distributeurs agréés par l’Organisation.\\
 \textbf{6.3}\hspace{3mm}Les détenteurs d’un titre d’accès «Pass 2 soirs» donnant accès aux soirées du 19 et 20 mai se verront remettre un bracelet d’identification. Le port de ce bracelet est obligatoire pendant toute la durée du festival.\\
-\textbf{6.4}\hspace{3mm}Toute personne présente sur la Zone Concerts doit être en mesure de présenter son titre d’accès. Sont considérés comme titres d’accès les bracelets d’identification précités ou les billets papier ou électroniques. Dans le cas contraire elle pourra être invitée à quitter la zone.\\
+\textbf{6.4}\hspace{3mm}Toute personne présente sur la Zone de Concerts doit être en mesure de présenter son titre d’accès. Sont considérés comme titres d’accès les bracelets d’identification précités ou les billets papier ou électroniques. Dans le cas contraire elle pourra être invitée à quitter la zone.\\
 \textbf{6.5}\hspace{3mm} Les Festivaliers sont avertis que leur image est susceptible d'être captée et retransmise en direct ou a posteriori et renoncent de fait à leur droit à l'image.\\
 
 
 
 \textbf{Article 7.}\hspace{3mm}Conditions de sortie\\
-\textbf{7.1}\hspace{3mm}Les Festivaliers ayant pénétré dans la Zone Concerts ne peuvent sortir que de manière définitive. \\
-\textbf{7.2}\hspace{3mm}Toute personne se présentant à l’entrée de la Zone Concerts avec un titre périmé est considérée comme étant déjà entrée sur la zone auparavant et est donc non admissible.\\
-\textbf{7.3}\hspace{3mm}Aucun Festivalier n’est autorisé à rester dans la Zone Concerts après 04h00. \\
+\textbf{7.1}\hspace{3mm}Les Festivaliers ayant pénétré dans la Zone de Concerts ne peuvent sortir que de manière définitive. \\
+\textbf{7.2}\hspace{3mm}Toute personne se présentant à l’entrée de la Zone de Concerts avec un titre périmé est considérée comme étant déjà entrée sur la zone auparavant et est donc non admissible.\\
+\textbf{7.3}\hspace{3mm}Aucun Festivalier n’est autorisé à rester dans la Zone de Concerts après 04h00. \\
 
 
 \textbf{Article 8.}\hspace{3mm}Sécurité\\
 \textbf{8.1}\hspace{3mm}Pour des raisons de sécurité, d’urgence ou pour assurer le bon fonctionnement, les Festivaliers doivent se conformer strictement aux instructions du personnel de sécurité de l’Organisation, qui a pour mission d’assurer les interventions nécessaires en cas d’incident, d’accident, de violences, d’évacuation, ainsi que l’application du présent règlement.\\
-\textbf{8.2}\hspace{3mm}Les Festivaliers s’engagent à se soumettre à toute mesure de contrôle ou de vérification destinée à assurer la sécurité des personnes et des biens dans la Zone Concerts. Les Festivaliers peuvent être amenés à subir une palpation de sécurité. L’accès sera refusé à toute personne ne se soumettant pas à ces mesures.\\
+\textbf{8.2}\hspace{3mm}Les Festivaliers s’engagent à se soumettre à toute mesure de contrôle ou de vérification destinée à assurer la sécurité des personnes et des biens dans la Zone de Concerts. Les Festivaliers peuvent être amenés à subir une palpation de sécurité. L’accès sera refusé à toute personne ne se soumettant pas à ces mesures.\\
 \textbf{8.3}\hspace{3mm}Il est interdit de contourner par n’importe quel moyen le dispositif de sécurité mis en place.\\
-\textbf{8.4}\hspace{3mm}Conformément au décret 96-926 du 17 octobre 1996 relatif à la vidéosurveillance pris pour l’application de l’article 10 de la loi 95-73 du 21 Janvier 1995 d’orientation et de programmation relative à la sécurité, la Zone Concerts est placée sous vidéo-surveillance.\\
+\textbf{8.4}\hspace{3mm}Conformément au décret 96-926 du 17 octobre 1996 relatif à la vidéosurveillance pris pour l’application de l’article 10 de la loi 95-73 du 21 Janvier 1995 d’orientation et de programmation relative à la sécurité, la Zone de Concerts est placée sous vidéo-surveillance.\\
 
 
 \textbf{Article 9.}\hspace{3mm}Comportements dangereux\\
 \textbf{9.1}\hspace{3mm}L’Organisation se réserve le droit d’interdire l’accès au festival à toute personne présentant un risque pour la sécurité.\\
-\textbf{9.2}\hspace{3mm}Toute personne en état d’ébriété peut se voir refuser l’accès à la Zone Concerts. \\
-\textbf{9.3}\hspace{3mm}Toute personne à l’intérieur de la Zone Concerts se trouvant en état d’ébriété pourra être invitée à quitter celle-ci et, au besoin, être expulsée par le personnel de sécurité. Dans tous les cas, il ne pourra pas avoir accès au service de boissons alcoolisées.\\
-\textbf{9.4}\hspace{3mm}Il est formellement interdit de faire usage de stupéfiants à l’intérieur de la Zone Concerts.\\
+\textbf{9.2}\hspace{3mm}Toute personne en état d’ébriété peut se voir refuser l’accès à la Zone de Concerts. \\
+\textbf{9.3}\hspace{3mm}Toute personne à l’intérieur de la Zone de Concerts se trouvant en état d’ébriété pourra être invitée à quitter celle-ci et, au besoin, être expulsée par le personnel de sécurité. Dans tous les cas, il ne pourra pas avoir accès au service de boissons alcoolisées.\\
+\textbf{9.4}\hspace{3mm}Il est formellement interdit de faire usage de stupéfiants à l’intérieur de la Zone de Concerts.\\
 \textbf{9.5}\hspace{3mm}Les Festivaliers s’engagent à respecter les règlements en vigueur sur le campus de Lyon Tech – La Doua.\\
-\textbf{9.6}\hspace{3mm}Les Festivaliers s’engagent à faire preuve de civisme, notamment en ce qui concerne la propreté et les nuisances sonores aux alentours de la Zone Concerts.\\
+\textbf{9.6}\hspace{3mm}Les Festivaliers s’engagent à faire preuve de civisme, notamment en ce qui concerne la propreté et les nuisances sonores aux alentours de la Zone de Concerts.\\
 
 
 \textbf{Article 10.}\hspace{3mm}Exclusion de la zone\\
-\textbf{10.1}\hspace{3mm}Toute personne refusant de se soumettre au présent règlement, ou ne respectant pas les différentes mesures et directives imposées par les Organisateurs, pourra se voir expulsée de la Zone Concerts, et ce, de manière définitive. En aucun cas une telle personne ne pourra prétendre à un remboursement de son titre d’accès. \\
+\textbf{10.1}\hspace{3mm}Toute personne refusant de se soumettre au présent règlement, ou ne respectant pas les différentes mesures et directives imposées par les Organisateurs, pourra se voir expulsée de la Zone de Concerts, et ce, de manière définitive. En aucun cas une telle personne ne pourra prétendre à un remboursement de son titre d’accès. \\
 
 
 \textbf{Article 11.}\hspace{3mm}Objets interdits\\
-\textbf{11.1}\hspace{3mm}L’accès à la Zone Concerts du festival est interdit aux personnes en possession de tout objet présentant un danger pour autrui ou pour soi-même.\\
-\textbf{11.2}\hspace{3mm}Pour des raisons de sécurité, il est formellement interdit d'introduire dans la Zone Concerts des animaux, des bouteilles, des boites métalliques et objets tranchants et/ou contendants, des boissons alcoolisées, des valises ou sacs de grande contenance, des monopodes téléscopiques, des casques de moto, des objets roulants à l'exception des fauteuils roulants, des chaises ou tables pliantes et d'une manière générale tout autre objet pouvant servir de projectile, tout objet dangereux et tout article pyrotechnique, arme à feu, substances explosives, inflammables ou volatiles, des signes et banderoles de toute taille de nature politique, idéologique, religieuse ou publicitaire.\\
-\textbf{11.3}\hspace{3mm}Les sondages d'opinion et interviews sont interdits dans tout le périmètre du festival, sauf autorisation expresse et écrite préalable de l'Organisation. De même, toute action de promotion, de distribution de tracts, de prospectus ou d'échantillons à l'intérieur de la Zone Concerts ou à ses abords directs, qui ne soit pas du fait de l'Organisation ou autorisée expressément par cette dernière par un écrit préalable, est prohibée.\\
+\textbf{11.1}\hspace{3mm}L’accès à la Zone de Concerts du festival est interdit aux personnes en possession de tout objet présentant un danger pour autrui ou pour soi-même.\\
+\textbf{11.2}\hspace{3mm}Pour des raisons de sécurité, il est formellement interdit d'introduire dans la Zone de Concerts des animaux, des bouteilles, des boites métalliques et objets tranchants et/ou contendants, des boissons alcoolisées, des valises ou sacs de grande contenance, des monopodes téléscopiques, des casques de moto, des objets roulants à l'exception des fauteuils roulants, des chaises ou tables pliantes et d'une manière générale tout autre objet pouvant servir de projectile, tout objet dangereux et tout article pyrotechnique, arme à feu, substances explosives, inflammables ou volatiles, des signes et banderoles de toute taille de nature politique, idéologique, religieuse ou publicitaire.\\
+\textbf{11.3}\hspace{3mm}Les sondages d'opinion et interviews sont interdits dans tout le périmètre du festival, sauf autorisation expresse et écrite préalable de l'Organisation. De même, toute action de promotion, de distribution de tracts, de prospectus ou d'échantillons à l'intérieur de la Zone de Concerts ou à ses abords directs, qui ne soit pas du fait de l'Organisation ou autorisée expressément par cette dernière par un écrit préalable, est prohibée.\\
 \textbf{11.4}\hspace{3mm}Tout contrevenant engage sa responsabilité et s'expose à des poursuites.\\
 \textbf{11.5}\hspace{3mm}Le service de sécurité est susceptible de confisquer ces objets à l’entrée.\\
 
 
 \textbf{Article 12.}\hspace{3mm}Responsabilité\\
-\textbf{12.1}\hspace{3mm}Chaque Festivalier est responsable de tout dommage, direct ou indirect, qu’il pourrait causer à l’occasion de sa présence dans la Zone Concerts et devra en répondre, civilement ou pénalement.\\
+\textbf{12.1}\hspace{3mm}Chaque Festivalier est responsable de tout dommage, direct ou indirect, qu’il pourrait causer à l’occasion de sa présence dans la Zone de Concerts et devra en répondre, civilement ou pénalement.\\
 \textbf{12.2}\hspace{3mm}Les Festivaliers sont responsables de leurs effets personnels. L’Organisation ne peut être tenue pour responsable de toute détérioration, de toute perte ou de tout vol touchant de tels effets. 
 
 \newpage
 
 
-\subsection{Procédure d’évacuation de la zone concerts}
+\subsection{Procédure d’évacuation de la Zone de Concerts}
 \label{refEvacuation}
 
-\subsubsection{Protocole de surveillance de la zone concerts :}
+\subsubsection{Protocole de surveillance de la Zone de Concerts :}
 
-Une échelle à trois niveaux est mise en place afin de qualifier l’état de la zone concerts :
+Une échelle à trois niveaux est mise en place afin de qualifier l’état de la Zone de Concerts :
 \begin{list}{•}{}
 	\item \textbf{Niveau 1} : Condition normale
 \end{list}
@@ -1420,11 +1510,11 @@ Pour limiter les risques en cas de vent faible, toute la signalétique est accro
 
 La grande scène fera l'objet d'une étude par un bureau de contrôle. La résistance au vent attendue est de 110 km/h (cf page \pageref{refVentGS}). Au-delà, le toit doit être descendu. Pour cela, la vitesse du vent est mesurée en temps réel à l’aide d’un anémomètre placé au sommet de ce dernier. \\
 
-En cas de descente du toit, les concerts seront annulés ou arrêtés et la zone concerts évacuée. Les personnes campant au village coureur sont également averties des risques.
+En cas de descente du toit, les concerts seront annulés ou arrêtés et la Zone de Concerts évacuée. Les personnes campant au village coureur sont également averties des risques.
 
 \subsection{Risques liés à l’orage}
 
-Des parafoudres sont déjà en place sur les bâtiments autour de la zone concerts et limitent les risques. En cas d’orage, une combinaison des précautions liées au vent et à la pluie est mise en place. Les activités sensibles sont arrêtées. 
+Des parafoudres sont déjà en place sur les bâtiments autour de la Zone de Concerts et limitent les risques. En cas d’orage, une combinaison des précautions liées au vent et à la pluie est mise en place. Les activités sensibles sont arrêtées. 
 
 \begin{center}
 	\includegraphics[scale=0.45, angle=90]{Annexes/Documents/BulletinMeteo}
@@ -1578,7 +1668,7 @@ A venir.
 
 \subsection{Périmètres d’action}
 
-Les équipes mobiles de la société «STAFF SECURITE» assureront en priorité les missions de sûreté sur la Zone Concerts en soirée, et sur l’ensemble des zones occupées par les animations en journée. 
+Les équipes mobiles de la société «STAFF SECURITE» assureront en priorité les missions de sûreté sur la Zone de Concerts en soirée, et sur l’ensemble des zones occupées par les animations en journée. 
 
 La zone hors périmètre STAFF représente le reste du campus de Lyon Tech - La Doua fermé à la circulation. Si un problème est identifié dans cette zone, le gardiennage de l’INSA, ou de l’université sera prévenu, en fonction du lieu de l’incident.
 
@@ -1603,7 +1693,7 @@ Enfin, les numéros de téléphone mobile des responsables de «STAFF Sécurité
 
 \subsubsection{Agents SSIAP}
 
-Le dispositif de sécurité incendie comporte 4 SSIAP 1, 2 SSIAP 2  et 1 SSIAP 3
+Le dispositif de sécurité incendie comporte 5 SSIAP 1, 2 SSIAP 2  et 1 SSIAP 3
 
 \subsubsection{Agents cynophiles}
 
@@ -1732,7 +1822,7 @@ Voici les différentes rencontres qui ont lieu avant la manifestation et qui per
 
 \subsection{Se former et former les personnels}
 
-L’association organisatrice du festival emploie essentiellement des membres bénévoles. L’effectif est majoritairement constitué d’anciens ayant déjà participé à l’organisation du festival, et à 35\% de nouveaux. Cette proportion nous permet d’une part de préparer la nouvelle édition en bénéficiant de l'expérience des anciens et de leurs retours par rapport à l'édition précédente, et d’autre part d’assurer un niveau de passation élevé.\\
+L’association organisatrice du festival emploie essentiellement des membres bénévoles. L’effectif est majoritairement constitué d’anciens ayant déjà participé à l’organisation du festival, et environ un tier de nouveaux. Cette proportion nous permet d’une part de préparer la nouvelle édition en bénéficiant de l'expérience des anciens et de leurs retours par rapport à l'édition précédente, et d’autre part d’assurer un niveau de passation élevé.\\
 
 En début d'année, l'ensemble des organisateurs suivent une formation aux premiers secours ainsi qu'une formation sécurité incendie dispensées par des organismes habilités. Ces formations sont également proposées à l'ensemble des membres actifs de l'association sous la forme du volontariat.\\
 
@@ -1756,7 +1846,7 @@ Par ailleurs, toutes les précautions sont prises en amont pour faire face à un
 	\item des messages d'évacuation visuels et sonores sont pré-enregistré afin d'être diffusés sur ordre du PC Sécurité au niveau des enceintes et écrans des scènes du festival lorsque l'ordre d'évacuer la zone est donné.\\
 \end{list}
 
-Enfin, nous sollicitons dès le mois de décembre notre agence privée de surveillance spécialisée dans la surveillance d'événements festifs, soit six mois avant la manifestation, afin de déterminer le nombre et le placement des agents de sûreté en adéquation avec la configuration des lieux et l'affluence attendue sur le festival. Le plan de répartition et le planning de présence des agents de sûreté est disponible figures \ref{plan_as} et \ref{planning_as}, pages \pageref{plan_as} et \pageref{planning_as}.
+Enfin, nous sollicitons dès le mois de décembre notre agence privée de surveillance spécialisée dans la surveillance d'événements festifs, soit six mois avant la manifestation, afin de déterminer le nombre et le placement des agents de sûreté en adéquation avec la configuration des lieux et l'affluence attendue sur le festival. Le plan de répartition et le planning de présence des agents de sûreté sont disponibles figures \ref{plan_as} et \ref{planning_as}, pages \pageref{plan_as} et \pageref{planning_as}.
  
 \subsection{Organiser la sécurité de l'événement}
 
@@ -1764,8 +1854,7 @@ Enfin, nous sollicitons dès le mois de décembre notre agence privée de survei
 \label{gestion_flux}
 
 \begin{list}{•}{}
-	\item Le campus est fermé à la circulation par arrêté du Directeur de l'INSA Lyon, du vendredi 18 mai 18h00 au lundi 22 mai 0h00. Des barrages gardés par des bénévoles et des agents de sûreté sont installés au niveau de quatre des six voies de circulation permettant d'entrer sur le campus. Ceux-ci sont munis d'une liaison radio permanente avec le PC Sécurité et ont pour consigne de ne laisser passer que les véhicules de secours ou les véhicules munis d'un laissez-passer délivré en amont par les responsables sécurité. La procédure mise en place pour les laissez-passer nécessite que le nom du conducteur ainsi que la plaque d'immatriculation du véhicule correspondent avec les informations obtenues en amont. Les deux voies n'étant pas gardées par des barrages sont condamnées par des plots en béton.
-	Les voitures stationnées aux abords de la zone seront évacuées avant l'ouverture de la zone ERP.
+	\item Le campus est fermé à la circulation par arrêté du Directeur de l'INSA Lyon, du vendredi 18 mai 18h00 au dimanche 20 mai 23h59. Des barrages gardés par des bénévoles sont installés au niveau de quatre des six voies de circulation permettant d'entrer sur le campus. Ceux-ci sont munis d'une liaison radio permanente avec le PC Sécurité et ont pour consigne de ne laisser passer que les véhicules de secours ou les véhicules munis d'un laissez-passer délivré en amont par les responsables sécurité. La procédure mise en place pour les laissez-passer nécessite que le nom du conducteur ainsi que la plaque d'immatriculation du véhicule correspondent avec les informations obtenues en amont. Sur les deux dernières voies, l'accès est impossible pour tout type de véhicules car elles sont condamnées par des plots en béton. Des bénévoles sont néanmoins en poste pour guider les secours si nécéssaire. Les voitures stationnées aux abords immédiats de la zone seront évacuées avant l'ouverture de la zone ERP. De plus, entre 20h et 5h du matin les vendredi et samedi soir, des véhicules de type kangoo sont placées en travers de la route des quatre barrage, empêchant ainsi l'intrusion volontaire de conducteurs mal intentionnés.
 	\item Les bâtiments aux abords de la zone sont fermés par les services de sécurité de l'INSA Lyon, après vérification qu'ils soient vides, le vendredi 18 mai à 19h00. Les accès standards, par badge, sont désactivés, et les autorisations d'accès sont nominatives et accordées en amont de la manifestation aux personnes nécessitant un accès.
 	\item En cas d'évacuation de la zone ERP, 13 issues de secours réparties autour de la zone permettent une évacuation rapide et dans toutes les directions.
 \end{list}
@@ -1787,8 +1876,8 @@ En amont de la manifestation seront publiées sur les réseaux sociaux des mesur
 
 \subsection{Assurer la protection du site}
 \begin{list}{•}{}
-	\item Comme indiqué section \ref{gestion_flux} page \pageref{gestion_flux}, le campus est fermé à la circulation par des barrages constitués de barrières de type Vauban et d'un véhicule de type utilitaire (en soirée uniquement), gardés par des bénévoles équipés d'une liaison radio avec le PC Sécurité et accompagnés d'un agent de sûreté (en soirée uniquement).
-	\item En complément des barrages, deux véhicules seront positionnés en travers de la voie à l'Est et à l'Ouest de la zone billetterie. Un agent de sûreté sera en permance prêt à déplacer le véhicule pour ouvrir la voie aux secours ou aux autorités.
+	\item Comme indiqué section \ref{gestion_flux} page \pageref{gestion_flux}, le campus est fermé à la circulation par des barrages constitués de barrières de type Vauban et d'un véhicule de type kangoo (en soirée uniquement), gardés par des bénévoles équipés d'une liaison radio avec le PC Sécurité et accompagnés d'un agent de sûreté (en soirée uniquement).
+	\item En complément des barrages, deux véhicules seront positionnés en travers de la voie à l'est et à l'ouest de la zone des entrées (cf figure \ref{second_perimetre} page \pageref{second_perimetre}). Deux agents de sûreté seront en permance prêt à déplacer les véhicules pour ouvrir la voie aux secours ou aux autorités.
 	\item Les parkings aux abords immédiats de la zone ERP sont également interdits de stationnement quelques jours avant la manifestation. Les véhicules contrevenant sont enlevés.
 	\item La zone ERP respecte les normes en vigueur, elle est donc étanche aux intrusions grâce à un barriérage couplé au dispositif d'agent de sûreté et permet une évacuation rapide et dans toutes les directions.
 	\item La zone billetterie est équipée de six couloirs de contrôle. Ce dispositif ainsi dimensionné a fait ses preuves lors de l'édition précédente puisque nous n'avons pas relevé d'engorgement aux entrées durant toute la durée d'ouverture de la zone. Le dispositif est donc reconduit pour cette édition et est rappelé figure \ref{etapes_entrees}, page \pageref{etapes_entrees}.
@@ -1840,7 +1929,8 @@ Dans cette partie, nous reprennons les mesures présentées dans les fiches tech
   N° 7 &
   \parbox[t]{4cm}{Assurer les communications internes} & 
   \parbox[t]{10cm}{- Des liaisons radio spécifiques sont mises en place pour communiquer avec les bénévoles, l'équipe d'agents de sûreté et les secouristes.\\
-  - Des lignes téléphoniques spécifiques avec les services de secours de la ville sont mises en place dans le PCS.\\}
+  - Des lignes téléphoniques spécifiques avec les services de secours de la ville sont mises en place dans le PCS.
+  - Les numéros de téléphone des responsables sécurité ainsi que du PCS sont communiqués à tous les bénévoles.\\}
  \\
  \hline
   N° 10 &
@@ -1882,7 +1972,7 @@ Horaires d’ouverture :
 	
 \end{list}
 
-Cet espace est situé à l'Est du bâtiment Freyssinet, comme indiqué sur la figure \ref{refFigSituationRestauration}, page \pageref{refFigSituationRestauration}.\\
+Cet espace est situé à l'est du bâtiment Freyssinet, comme indiqué sur la figure \ref{refFigSituationRestauration}, page \pageref{refFigSituationRestauration}.\\
 
 
 Deux membres de l’organisation des 24 heures de l’INSA sont les interlocuteurs privilégiés des prestataires. Ils se chargent d'établir les contrats, veillent à ce que les professionnels de la restauration soient déclarés en tant que tels et rappellent les règlementations applicables en termes d'hygiène et de sécurité.\\
@@ -2053,26 +2143,39 @@ A venir.
 
 \subsubsection{Analyse des risques sur la course cycliste}
 
-\begin{tabular}{ | p{2cm} | p{2.5cm} | p{2.5cm} | p{5cm} | p{4cm} | }
+\begin{tabular}{ | p{2cm} | p{2cm} | p{2.5cm} | p{5cm} | p{4.5cm} | }
 \hline
 	Risques \cellcolor[gray]{0.9}& Probabilité d'occurrence* \cellcolor[gray]{0.9}& Cause \cellcolor[gray]{0.9}& \multicolumn{2}{|l|}{Solution\cellcolor[gray]{0.9}} \\ \hline
 	\cellcolor[gray]{0.9} &\cellcolor[gray]{0.9}  & \cellcolor[gray]{0.9} & \cellcolor[gray]{0.9}Préventives & \cellcolor[gray]{0.9}Curatives \\ \hline
 	\cellcolor[gray]{0.9}Chutes, Plaies & Moyenne & Malaises, Fatigue, Conditions météorologiques, Mauvaise visibilité & - Mise en fourrière d’éventuels véhicules obstacles
+
 - Nettoyage préalable de la chaussée
+
 - Signalisation du parcours et des obstacles
+
 - Briefing complet des coureurs avant le départ de la course
+
 - Port du casque obligatoire, éclairage sur les vélos obligatoire
+
 - Eclairage de la chaussée sur tout le parcours de nuit
+
 - «Village courses» où les coureurs peuvent se reposer, stand massage tenu par des élèves kinésithérapeutes & - Présence d’une équipe de secouristes spécialement dédiée à la course
+
 - Présence d’une «voiture-balai» circulant sur le tracé, en contact avec les organisateurs et donc les secouristes
+
 - Le ou les blessés graves sont pris en charge par les secouristes et transférés à l'infirmerie. Après évaluation des blessures, les pompiers sont contactés pour évacuation vers la clinique du Tonkin ou l'hôpital Edouard Herriot.
  \\ \hline
-	\cellcolor[gray]{0.9}Collisions avec les spectateurs traversant le circuit & Moyenne & Tracé de la course longeant la zone concerts & - Briefing complet des coureurs avant le départ de la course
+	\cellcolor[gray]{0.9}Collisions avec les spectateurs traversant le circuit & Moyenne & Tracé de la course longeant la Zone de Concerts & - Briefing complet des coureurs avant le départ de la course
+
 - Signalisation importante du circuit près des points critiques
+
 - Gestion très stricte des flux de spectateurs aux points de passage
+
 - Points de surveillance supplémentaires répartis sur les endroits à risque & Voir les Procédures d’arrêt de la course  \\ \hline
 	\cellcolor[gray]{0.9}Agression par les visiteurs & Moyenne & Alcoolémie & - Gestion très stricte des flux de spectateurs aux points de passage 
+
 - Entrée interdite aux véhicules, sauf munis d’un laissez-passer préalablement délivré par les 24 heures, et ce pour toute la durée de la manifestation
+
 - Eclairage de la chaussée sur tout le parcours de nuit & Voir les Procédures d’arrêt de la course \\ \hline
 	\multicolumn{5}{|l|}{* à titre indicatif. Le risque d'occurrence est basé sur l'expérience des années précédentes. }\\ \hline
 \end{tabular}
@@ -2460,7 +2563,7 @@ Des concerts de jazz auront lieu sur la grande scène en clôture du festival le
 
 La soirée du dimanche soir est destinée aux étudiants, et la communication sera limitée en dehors des étudiants concernant cette soirée. Ceci nous permet d’estimer le public à 2000 personnes environ. 
 
-Une zone ERP réduite sera mise en place à partir de 19h dans la partie sud de la zone concerts:
+Une zone ERP réduite sera mise en place à partir de 19h dans la partie sud de la Zone de Concerts:
 
 \begin{center}
 \includegraphics[width=.8\textwidth,keepaspectratio]{Exports/Plan_24h_44eme-ERP_Dimanche}
@@ -2506,7 +2609,7 @@ Analyse des risques
 
 Matériel et dispositions de sécurité & Dès 18h, toutes les animations sur l’ensemble de la zone du festival sont arrêtées. 
 
-A partir de 19h30, les agents se postent aux différents accès à la zone Sud où se trouve la grande scène (l’accès Sud se fait par la sortie, la zone des caisses est condamnée) 
+A partir de 19h30, les agents se postent aux différents accès à la Zone Sud où se trouve la grande scène (l’accès sud se fait par la sortie, la zone des caisses est condamnée) 
 
 Les agents postés aux accès à la zone effectuent un contrôle visuel des sacs et confisquent les bouteilles de verre. 
 
@@ -2779,6 +2882,7 @@ Matériel et dispositions de sécurité & La zone du spectacle sera délimitée 
 %\end{center}
 
 \subsection{Tyrolienne}
+\label{tyrolienne}
 \subsubsection{Principe de l’animation}
 
 L’animation se compose de d’une cage à grimper de 8m de haut avec une tyrolienne de 40m de long arrivant sur l’herbe. Les utilisateurs peuvent monter a l’aide de filets, tout en étant assuré. Cette animation peut contenir 8 personnes en simultanées et est ouverte à tous.
@@ -2801,7 +2905,7 @@ L’animation se compose de d’une cage à grimper de 8m de haut avec une tyrol
 \captionof{figure}{Accès des secours}
 \end{center}
 
-L’accès aux secours est possible depuis le Sud par l’avenue Jean Capelle Ouest. 
+L’accès aux secours est possible depuis le sud par l’avenue Jean Capelle Ouest. 
 
 
 \subsubsection{Caractéristiques techniques de la structure :}
@@ -2926,20 +3030,20 @@ Matériel et dispositions de sécurité & Deux agents de sûreté seront postés
 \newpage
 \section{Dispositions spécifiques en vue d’accueillir des Personnes à Mobilité Réduite (PMR)}
 
-\subsection{Accès à la zone concerts aux PMR}
+\subsection{Accès à la Zone de Concerts aux PMR}
 
-Le cheminement des Personnes à Mobilité Réduite est indiqué depuis l’arrêt de tramway T1 INSA-Einstein qui est l’endroit le plus proche en transports en commun pour accéder à la zone concerts (moins de 200 mètres), comme l’indique le plan suivant :
+Le cheminement des Personnes à Mobilité Réduite est indiqué depuis l’arrêt de tramway T1 INSA-Einstein qui est l’endroit le plus proche en transports en commun pour accéder à la Zone de Concerts (moins de 200 mètres), comme l’indique le plan suivant :
 
 
 \begin{center}
 \includegraphics[width=\textwidth,keepaspectratio]{Annexes/Images/PMR_entree}
-\captionof{figure}{Accès à la zone concerts depuis la station INSA - Einstein}
+\captionof{figure}{Accès à la Zone de Concerts depuis la station INSA - Einstein}
 \end{center}
 L’entrée dans le périmètre de l’établissement de plein air s’effectue par la rue des Sciences. Le campus de La Doua (repéré sur le plan de masse) est entièrement fermé à la circulation pendant tout le week-end, permettant aux PMR en fauteuils roulant d’emprunter la voirie en toute liberté.
 
 \subsection{Accueil des véhicules de PMR}
 
-Du vendredi 18 mai 18h au lundi 21 mai 00h00, le campus sera fermé à la circulation, cependant un parking sera aménagé et réservé pour accueillir les Personnes à Mobilité Réduite se déplaçant en voiture. L’accès au campus des PMR ne pourra se faire que par le PS5 (avenue Gaston Berger). Sur le campus, de nombreux stationnements réservés aux PMR sont disponibles, mais ces derniers seront redirigés en priorité vers le parking de la bibliothèque, car c'est le plus proche de la zone.
+Du vendredi 18 mai 18h au dimanche 20 mai 23h59, le campus sera fermé à la circulation, cependant un parking sera aménagé et réservé pour accueillir les Personnes à Mobilité Réduite se déplaçant en voiture. L’accès au campus des PMR ne pourra se faire que par le PS5 (avenue Gaston Berger). Sur le campus, de nombreux stationnements réservés aux PMR sont disponibles, mais ces derniers seront redirigés en priorité vers le parking de la bibliothèque, car c'est le plus proche de la zone.
 
 \begin{center}
 \includegraphics[width=\textwidth,keepaspectratio]{Annexes/Images/PMR_entree2}
@@ -2947,7 +3051,7 @@ Du vendredi 18 mai 18h au lundi 21 mai 00h00, le campus sera fermé à la circul
 \end{center}
 Ce parking possède des places de stationnement destinées aux PMR.
 
-Si ces places sont occupées, les Personnes à Mobilité Réduite seront prises en charge par un bénévole dès l’entrée sur le campus. Le membre de l’organisation les dirigera vers d’autres parcs de stationnement réservés aux Personnes à Mobilité Réduite, puis aidera la personne à mobilité réduite à rejoindre la zone concerts si nécessaire. En cas d’impossibilité, il fera appel à un autre membre de l’organisation par appel radio.
+Si ces places sont occupées, les Personnes à Mobilité Réduite seront prises en charge par un bénévole dès l’entrée sur le campus. Le membre de l’organisation les dirigera vers d’autres parcs de stationnement réservés aux Personnes à Mobilité Réduite, puis aidera la personne à mobilité réduite à rejoindre la Zone de Concerts si nécessaire. En cas d’impossibilité, il fera appel à un autre membre de l’organisation par appel radio.
 
 \begin{center}
 \includegraphics[scale=1]{Annexes/Images/parkingPMRDOUA}
@@ -2962,7 +3066,7 @@ L’accès aux Personnes à Mobilité Réduite en soirée sera différencié en 
 \subsection{Accès des PMR possédant déjà un billet d’entrée}
 
 
-L’entrée de ces Personnes à Mobilité Réduite s’effectue par la sortie principale située dans la rue des sciences au sud de la zone concerts à quelques mètres de l’entrée
+L’entrée de ces Personnes à Mobilité Réduite s’effectue par la sortie principale située dans la rue des sciences au sud de la Zone de Concerts à quelques mètres de l’entrée
 
 
 \begin{center}
@@ -3049,10 +3153,11 @@ Les spectateurs pourront obtenir des renseignements au stand accueil :
 \end{itemize}
 
 \subsection{Mise en place de cabinets d’aisance dédiés}
+\label{toilette_PMR}
 
-Dans la continuité des éditions précédentes, les Personnes à Mobilité Réduite auront à disposition des toilettes (et lavabos) adaptés. Elles seront situées au sud de la structure PMR pour voir les concerts de la grande scène, le tout en conformité avec la circulaire interministérielle DGUHC 2007-53 du 30/11/1997.\\
+Dans la continuité des éditions précédentes, les Personnes à Mobilité Réduite auront à disposition des toilettes adaptés. Elles seront situées au sud de la structure PMR pour voir les concerts de la grande scène, le tout en conformité avec la circulaire interministérielle DGUHC 2007-53 du 30/11/1997.\\
 
-La structure est munie d’un dispositif permettant de fermer la porte derrière soi une fois rentré, comporte un lave-mains dont le plan supérieur est situé à une hauteur maximale de 0,85 m, a une surface d’assise de la cuvette comprise entre 0,45 et 0,50 m et est munie d’une barre d’appui latérale capable de supporter le poids d’un adulte et fixée à une hauteur comprise entre 0,7 et 0,8 m. Un lavabo est également installé dans la structure : 0,3 m de profondeur pour 0,6 m de profondeur et 0,7 m de hauteur autorisant le passage des pieds et genoux d’une personne en fauteuil roulant.\\
+La structure est munie d’un dispositif permettant de fermer la porte derrière soi une fois rentré, comporte un lave-mains dont le plan supérieur est situé à une hauteur maximale de 0,85 m, a une surface d’assise de la cuvette comprise entre 0,45 et 0,50 m et est munie d’une barre d’appui latérale capable de supporter le poids d’un adulte et fixée à une hauteur comprise entre 0,7 et 0,8 m.\\
 
 Un agent SSIAP 1 est positionné au pied de la rampe PMR et se tient prêt à aider les Personnes à Mobilité Réduite désirant se déplacer et accéder à une cabine.
 
@@ -3150,7 +3255,7 @@ Les organismes suivants seront présents :
 \item les associations Frisse et Avenir Santé feront de la prévention sur les comportements à risques en général. Leur action peut inclure la tenue d’un stand, en statique, mais également des patrouilles en soirée au sein de la zone ERP afin d'informer directement le public.
 \item la Ligue contre la Violence tiendra un stand d’information par rapport à la Sécurité Routière.
 \end{list}
-\newpage
+
 \section{Prévention des risques liés aux transports}
 
 \subsection{Désactivation des bornes Vélo’v}
@@ -3165,7 +3270,7 @@ Par mesure de précaution, les bornes suivantes sont désactivées pendant la du
 \subsection{Dispositif relatif au réseau TCL}
 
 
-Le festival est desservi par les lignes de tramway T1 et T4. Il est conseillé aux visiteurs de descendre respectivement aux arrêts INSA Einstein et La Doua - Gaston Berger. Pour guider les visiteurs vers l’entrée du festival une signalétique sera mise en place depuis la station Gaston Berger, terminus du tramway T4, jusqu’à l’entrée du festival.\\
+Le festival est desservi par les lignes de tramway T1 et T4. Il est conseillé aux visiteurs de descendre respectivement aux arrêts INSA Einstein et La Doua - Gaston Berger. Pour guider les visiteurs vers l’entrée du festival une signalétique sera mise en place depuis la station La Doua - Gaston Berger, terminus du tramway T4, jusqu’à l’entrée du festival.\\
 
 Pour les deux soirs de concerts, les lignes Pleine Lune sont renversées : elles effectuent le trajet depuis le campus de la Doua vers le centre ville toutes les heures jusqu’à 3h30.\\
 
@@ -3213,7 +3318,7 @@ A venir.
 \captionof{figure}{Habilitation éléctrique de l'électricien}
 \end{center}
 
-\subsection{Attestation d'assurance du prestataire Audio Technique}
+\subsection{Attestation d'assurance du prestataire Câble et Compagnie}
 À venir.
 %\begin{center}
 %\includegraphics[scale=0.72]{images/attestationAT}
@@ -3256,7 +3361,7 @@ A venir.
 \subsection{Fiche ERP du bâtiment «Freyssinet» (307)}
 \begin{center}
 \includegraphics[scale=0.5]{Annexes/Documents/ERPFreyssinet}
-\captionof{figure}{Fiche ERP du bâtiment «Freyssinet» (307)}
+\captionof{figure}{Fiche ERP du bâtiment «Eugène Freyssinet» (307)}
 \end{center}
 
 
@@ -3297,7 +3402,7 @@ A venir.
 \captionof{figure}{Fiche ERP du bâtiment «Coulomb/Eiffel» (304-305-306)}
 \end{center}
 
-\subsection{Fiche ERP du bâtiment «Piscine INSA»}
+\subsection{Fiche ERP du bâtiment « INSA Piscine»}
 \begin{center}
 \includegraphics[scale=1.2]{Annexes/Documents/ERPPiscine}
 \captionof{figure}{Fiche ERP du bâtiment «Piscine INSA»}
